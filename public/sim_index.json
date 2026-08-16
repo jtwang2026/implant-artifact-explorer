@@ -1,0 +1,59 @@
+{
+ "experiments": [
+  {
+   "key": "exp_depth_0.6mm",
+   "label": "深度 0.6 mm（单因素）",
+   "clean": "sim_slices/exp_depth_0.6mm_clean.png",
+   "artifact": "sim_slices/exp_depth_0.6mm_artifact.png",
+   "slice": 167,
+   "size": [
+    144,
+    144
+   ]
+  },
+  {
+   "key": "exp_depth_1mm",
+   "label": "深度 1.0 mm（单因素）",
+   "clean": "sim_slices/exp_depth_1mm_clean.png",
+   "artifact": "sim_slices/exp_depth_1mm_artifact.png",
+   "slice": 167,
+   "size": [
+    144,
+    144
+   ]
+  },
+  {
+   "key": "exp_pitch_1.6mm",
+   "label": "螺距 1.6 mm（单因素）",
+   "clean": "sim_slices/exp_pitch_1.6mm_clean.png",
+   "artifact": "sim_slices/exp_pitch_1.6mm_artifact.png",
+   "slice": 167,
+   "size": [
+    144,
+    144
+   ]
+  },
+  {
+   "key": "exp_osstem_tsiii_baseline",
+   "label": "OSSTEM TSIII 基线",
+   "clean": "sim_slices/exp_osstem_tsiii_baseline_clean.png",
+   "artifact": "sim_slices/exp_osstem_tsiii_baseline_artifact.png",
+   "slice": 167,
+   "size": [
+    144,
+    144
+   ]
+  },
+  {
+   "key": "exp_ti64_depth_0.6mm",
+   "label": "Ti-6Al-4V 深度 0.6 mm",
+   "clean": "sim_slices/exp_ti64_depth_0.6mm_clean.png",
+   "artifact": "sim_slices/exp_ti64_depth_0.6mm_artifact.png",
+   "slice": 167,
+   "size": [
+    144,
+    144
+   ]
+  }
+ ]
+}

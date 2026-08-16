@@ -1,0 +1,93 @@
+/* 仿真配对数据对比（sim）样式 */
+.sim{background:var(--paper);color:var(--ink);min-height:100vh}
+.sim-hero{padding:80px clamp(22px,8vw,130px) 40px;max-width:1200px;margin:0 auto}
+.sim-hero h1{font-family:Georgia,"Noto Serif SC",serif;font-size:clamp(42px,6vw,72px);line-height:1.05;letter-spacing:-.04em;margin:20px 0}
+.sim-hero h1 em{font-weight:400;color:var(--teal)}
+.sim-hero .lead{font-size:16px;line-height:1.85;max-width:860px;color:#40514d}
+.sim-stage{max-width:1200px;margin:0 auto;padding:10px clamp(22px,8vw,130px) 70px}
+.sim-controls{display:flex;flex-direction:column;gap:18px;margin-bottom:18px}
+.sim-exp-btns{display:flex;gap:10px;flex-wrap:wrap}
+.sim-exp-btns button{padding:10px 16px;border:1px solid var(--line);background:var(--white);cursor:pointer;font-size:13px;font-weight:700;border-radius:2px;color:var(--ink)}
+.sim-exp-btns button.on{background:var(--teal);color:#fff;border-color:var(--teal)}
+.sim-slider-row{display:flex;align-items:center;gap:16px}
+.sim-slider-row input[type=range]{flex:1;accent-color:var(--teal)}
+.side-label{font-size:12px;font-weight:800;letter-spacing:.1em;color:#8a958f}
+.sim-compare{display:flex;justify-content:center;margin-bottom:16px}
+.compare-box{position:relative;width:520px;height:520px;max-width:100%;background:var(--ink);border:1px solid var(--line);border-radius:3px;overflow:hidden;user-select:none}
+.compare-layer{position:absolute;inset:0}
+.compare-layer img{width:100%;height:100%;object-fit:contain}
+.compare-layer.clean{z-index:2}
+.divider-line{position:absolute;top:0;bottom:0;width:2px;background:var(--orange);z-index:3;pointer-events:none}
+.compare-tag{position:absolute;top:12px;z-index:4;font-size:11px;font-weight:800;letter-spacing:.12em;padding:5px 10px;border-radius:2px}
+.tag-clean{left:12px;background:rgba(11,107,93,.85);color:#fff}
+.tag-artifact{right:12px;background:rgba(233,109,54,.9);color:#fff}
+.sim-meta{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:18px}
+@media(max-width:800px){.sim-meta{grid-template-columns:repeat(2,1fr)}}
+.sim-meta div{background:var(--white);border:1px solid var(--line);padding:14px 16px;border-radius:3px}
+.sim-meta small{display:block;font-size:10.5px;color:#8a958f;margin-bottom:5px;letter-spacing:.05em}
+.sim-meta b{font-size:13px;color:var(--ink)}
+
+/* 模块二：分层仿真架构 */
+.sim-section{max-width:1200px;margin:0 auto;padding:40px clamp(22px,8vw,130px) 20px}
+.sim-section .section-head{margin-bottom:24px}
+.layer-arch{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;margin-bottom:26px;position:relative}
+@media(max-width:1000px){.layer-arch{grid-template-columns:repeat(auto-fit,minmax(150px,1fr))}}
+.layer-item{background:var(--white);border:1px solid var(--line);border-radius:3px;padding:16px;position:relative;text-align:center}
+.layer-item .layer-tag{display:inline-block;font-size:15px;font-weight:800;color:var(--teal);background:var(--mint);padding:2px 10px;border-radius:2px;margin-bottom:8px}
+.layer-item b{display:block;font-size:13px;margin-bottom:6px}
+.layer-item p{font-size:11px;line-height:1.6;color:#52615c;margin:0}
+.layer-arrow{position:absolute;right:-12px;top:50%;transform:translateY(-50%);color:var(--orange);font-style:normal;font-weight:800;z-index:2;background:var(--paper);padding:0 2px}
+.layer-0 .layer-tag{background:#e8eef5;color:#4a6a8a}
+.layer-1 .layer-tag{background:var(--mint);color:var(--teal)}
+.layer-2 .layer-tag{background:#fde8dc;color:var(--orange)}
+.layer-3 .layer-tag{background:#f3e7da;color:#8a5a2b}
+.layer-4 .layer-tag{background:#e6e0f0;color:#5b4a8a}
+.sim-figs{display:flex;flex-direction:column;gap:22px}
+.sim-figs figure{margin:0;background:var(--white);border:1px solid var(--line);padding:16px}
+.sim-figs img{border:1px solid #e2ded2}
+.sim-figs figcaption{font-size:12.5px;line-height:1.7;color:#40514d;margin-top:12px}
+.sinogram-pair{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+@media(max-width:800px){.sinogram-pair{grid-template-columns:1fr}}
+
+/* 差分可视化视图 */
+.sim-view-tabs{display:flex;gap:8px;flex-wrap:wrap}
+.sim-view-tabs button{padding:9px 16px;border:1px solid var(--line);background:var(--white);cursor:pointer;font-weight:700;font-size:12.5px;border-radius:2px;color:var(--ink)}
+.sim-view-tabs button.on{background:var(--ink);color:#fff;border-color:var(--ink)}
+.sim-single-fig{display:flex;flex-direction:column;align-items:center;gap:12px;background:var(--white);border:1px solid var(--line);padding:20px;border-radius:3px;margin-bottom:16px}
+.sim-single-fig img{max-width:100%;height:auto;border:1px solid #e2ded2}
+.fig-note{font-size:13px;line-height:1.8;color:#40514d;max-width:700px;margin:0}
+.fig-note .red{color:#c0392b}
+.fig-note .blue{color:#2c7fb8}
+
+/* 层数滑杆（L0-L4 分层） */
+.layer-slider-wrap{background:var(--white);border:1px solid var(--line);border-radius:3px;padding:22px 24px;margin-bottom:16px}
+.layer-slider-row{display:grid;grid-template-columns:repeat(5,1fr);gap:8px;margin-bottom:12px}
+.layer-slider-row button{display:flex;flex-direction:column;align-items:center;gap:2px;padding:12px 8px;border:1px solid var(--line);background:var(--paper);cursor:pointer;border-radius:2px}
+.layer-slider-row button.on{background:var(--teal);border-color:var(--teal)}
+.layer-slider-row button.on b,.layer-slider-row button.on span{color:#fff}
+.layer-slider-row b{font-size:15px;color:var(--teal)}
+.layer-slider-row span{font-size:10.5px;color:#52615c}
+.layer-slider-wrap input[type=range]{width:100%;accent-color:var(--teal);margin-bottom:16px}
+.layer-view{display:grid;grid-template-columns:1fr 1.1fr;gap:18px;align-items:center}
+@media(max-width:850px){.layer-view{grid-template-columns:1fr}}
+.layer-img{position:relative;background:var(--ink);border-radius:3px;overflow:hidden}
+.layer-img img{width:100%;height:auto;display:block}
+.layer-badge{position:absolute;top:10px;left:10px;background:var(--orange);color:#fff;font-weight:800;font-size:12px;padding:4px 10px;border-radius:2px}
+.layer-desc h4{font-size:16px;margin:0 0 8px}
+.layer-desc p{font-size:13.5px;line-height:1.8;color:#40514d;margin:0 0 10px}
+.layer-desc .layer-note{font-size:12px;color:#8a958f;border-top:1px dashed var(--line);padding-top:10px}
+
+/* 层统计与发现 */
+.layer-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:18px 0 12px}
+@media(max-width:800px){.layer-stats{grid-template-columns:repeat(2,1fr)}}
+.layer-stats div{background:var(--white);border:1px solid var(--line);padding:14px 16px;border-radius:3px}
+.layer-stats small{display:block;font-size:10.5px;color:#8a958f;margin-bottom:5px;letter-spacing:.05em}
+.layer-stats b{font-size:13px;color:var(--ink)}
+.layer-finding{font-size:13.5px;line-height:1.85;color:#40514d;background:#eef7f1;border-left:3px solid var(--teal);padding:14px 18px;border-radius:2px;margin:0 0 24px}
+.layer-finding b{color:var(--teal)}
+
+/* 层滑杆双图布局 */
+.layer-view-right{display:flex;flex-direction:column;gap:12px}
+.layer-view-right .layer-desc{margin-top:4px}
+.layer-img.diff{border:2px solid var(--orange)}
+.layer-badge.diff-badge{background:var(--orange)}

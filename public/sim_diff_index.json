@@ -1,0 +1,39 @@
+{
+ "experiments": [
+  {
+   "key": "exp_depth_0.6mm",
+   "label": "深度 0.6 mm",
+   "diff": "sim_diff/exp_depth_0.6mm_diff.png",
+   "profile": "sim_diff/exp_depth_0.6mm_profile.png",
+   "dist": "sim_diff/exp_depth_0.6mm_dist.png"
+  },
+  {
+   "key": "exp_depth_1mm",
+   "label": "深度 1.0 mm",
+   "diff": "sim_diff/exp_depth_1mm_diff.png",
+   "profile": "sim_diff/exp_depth_1mm_profile.png",
+   "dist": "sim_diff/exp_depth_1mm_dist.png"
+  },
+  {
+   "key": "exp_pitch_1.6mm",
+   "label": "螺距 1.6 mm",
+   "diff": "sim_diff/exp_pitch_1.6mm_diff.png",
+   "profile": "sim_diff/exp_pitch_1.6mm_profile.png",
+   "dist": "sim_diff/exp_pitch_1.6mm_dist.png"
+  },
+  {
+   "key": "exp_osstem_tsiii_baseline",
+   "label": "OSSTEM TSIII",
+   "diff": "sim_diff/exp_osstem_tsiii_baseline_diff.png",
+   "profile": "sim_diff/exp_osstem_tsiii_baseline_profile.png",
+   "dist": "sim_diff/exp_osstem_tsiii_baseline_dist.png"
+  },
+  {
+   "key": "exp_ti64_depth_0.6mm",
+   "label": "Ti-6Al-4V",
+   "diff": "sim_diff/exp_ti64_depth_0.6mm_diff.png",
+   "profile": "sim_diff/exp_ti64_depth_0.6mm_profile.png",
+   "dist": "sim_diff/exp_ti64_depth_0.6mm_dist.png"
+  }
+ ]
+}
