@@ -1,0 +1,169 @@
+{
+  "schema_name": "ci_mas_crest_reference_calibration",
+  "schema_version": "0.1.0",
+  "created_at_utc": "2026-08-09T08:42:23.541321+00:00",
+  "status": "failed_preregistered_gate",
+  "scene_scope": "idealized_full_dentition_virtual_metal_insertion",
+  "clinical_treatment_planning_validated": false,
+  "main_fit": {
+    "inner_radius_mm": 3.05,
+    "outer_radius_mm": 6.25,
+    "coronal_quantile": 0.1,
+    "plane": {
+      "equation": "z = a*x + b*y + c",
+      "a": 0.1748957637825167,
+      "b": 0.31193775605407276,
+      "c": -0.12459251173330284
+    },
+    "subcrestal_depth_mm": 0.12459251173330284,
+    "valid_bins": 72,
+    "inlier_bins": 69,
+    "rmse_mm": 0.23192173668792612,
+    "sector_crest_z_mm": {
+      "distal": 0.5895732406319325,
+      "buccal": 1.0772144112644062,
+      "mesial": -1.0714544968349307,
+      "lingual": -1.5057599144294778
+    },
+    "sector_valid_bins": {
+      "distal": 18,
+      "buccal": 16,
+      "mesial": 18,
+      "lingual": 17
+    },
+    "sector_range_mm": 2.582974325693884
+  },
+  "sensitivity_variants": [
+    {
+      "inner_radius_mm": 3.05,
+      "outer_radius_mm": 6.25,
+      "coronal_quantile": 0.05,
+      "plane": {
+        "equation": "z = a*x + b*y + c",
+        "a": 0.18273292369305613,
+        "b": 0.3145446029054024,
+        "c": -0.2483178499441311
+      },
+      "subcrestal_depth_mm": 0.2483178499441311,
+      "valid_bins": 72,
+      "inlier_bins": 70,
+      "rmse_mm": 0.17126459417799772,
+      "sector_crest_z_mm": {
+        "distal": 0.520998701011741,
+        "buccal": 0.8181550393659047,
+        "mesial": -1.2390811492398437,
+        "lingual": -1.6581477802521256
+      },
+      "sector_valid_bins": {
+        "distal": 18,
+        "buccal": 16,
+        "mesial": 18,
+        "lingual": 18
+      },
+      "sector_range_mm": 2.4763028196180303
+    },
+    {
+      "inner_radius_mm": 3.05,
+      "outer_radius_mm": 6.25,
+      "coronal_quantile": 0.15,
+      "plane": {
+        "equation": "z = a*x + b*y + c",
+        "a": 0.17656524393267173,
+        "b": 0.3138549445405174,
+        "c": -0.001082497666357139
+      },
+      "subcrestal_depth_mm": 0.001082497666357139,
+      "valid_bins": 72,
+      "inlier_bins": 70,
+      "rmse_mm": 0.266877088342381,
+      "sector_crest_z_mm": {
+        "distal": 0.787677466201375,
+        "buccal": 1.130550164302333,
+        "mesial": -0.9495442041768125,
+        "lingual": -1.3457526553156973
+      },
+      "sector_valid_bins": {
+        "distal": 18,
+        "buccal": 16,
+        "mesial": 18,
+        "lingual": 18
+      },
+      "sector_range_mm": 2.4763028196180303
+    },
+    {
+      "inner_radius_mm": 2.65,
+      "outer_radius_mm": 5.85,
+      "coronal_quantile": 0.1,
+      "plane": {
+        "equation": "z = a*x + b*y + c",
+        "a": 0.1862938325738676,
+        "b": 0.3234479104561528,
+        "c": -0.15681399111110098
+      },
+      "subcrestal_depth_mm": 0.15681399111110098,
+      "valid_bins": 72,
+      "inlier_bins": 68,
+      "rmse_mm": 0.20832180914428644,
+      "sector_crest_z_mm": {
+        "distal": 0.5895732406319325,
+        "buccal": 0.8638713991126991,
+        "mesial": -1.0714544968349307,
+        "lingual": -1.5286180943028749
+      },
+      "sector_valid_bins": {
+        "distal": 18,
+        "buccal": 16,
+        "mesial": 18,
+        "lingual": 16
+      },
+      "sector_range_mm": 2.392489493415574
+    },
+    {
+      "inner_radius_mm": 3.45,
+      "outer_radius_mm": 6.65,
+      "coronal_quantile": 0.1,
+      "plane": {
+        "equation": "z = a*x + b*y + c",
+        "a": 0.16949889533158408,
+        "b": 0.320222915239073,
+        "c": -0.10817027268635204
+      },
+      "subcrestal_depth_mm": 0.10817027268635204,
+      "valid_bins": 72,
+      "inlier_bins": 65,
+      "rmse_mm": 0.24640122541970338,
+      "sector_crest_z_mm": {
+        "distal": 0.520998701011741,
+        "buccal": 1.3057962099983782,
+        "mesial": -0.9800217773413422,
+        "lingual": -1.4448047681004184
+      },
+      "sector_valid_bins": {
+        "distal": 18,
+        "buccal": 12,
+        "mesial": 18,
+        "lingual": 17
+      },
+      "sector_range_mm": 2.7506009780987966
+    }
+  ],
+  "acceptance": {
+    "checks": {
+      "valid_bins_at_least_36": true,
+      "each_sector_at_least_6_bins": true,
+      "rmse_at_most_0p8_mm": true,
+      "sector_range_at_most_2p0_mm": false,
+      "sensitivity_at_most_0p8_mm": true
+    },
+    "sensitivity_max_abs_depth_change_mm": 0.12372533821082828,
+    "pass": false
+  },
+  "reported_measurement_uncertainty_mm": 0.4,
+  "inputs": {
+    "segmentation_path": "D:\\CT_competition\\datas\\seg_results_postprocessed\\YOFO_No_Metal_24_seg_final.nii.gz",
+    "segmentation_sha256": "eeca95bcf24f40f4c30e9dc4054bdff7d93b6aac28f51e459603b63fab95e0b9",
+    "frame_path": "D:\\CT_competition\\cbct_simulation\\placement_library\\YOFO_No_Metal_24\\FDI36\\baseline_v1\\local_anatomical_frame_v1.json",
+    "frame_sha256": "75a40de83024df6a24ee13ff40dac2618c36c71c7907107149b0bfe489c2c01a",
+    "boundary_point_count": 134196
+  }
+}
