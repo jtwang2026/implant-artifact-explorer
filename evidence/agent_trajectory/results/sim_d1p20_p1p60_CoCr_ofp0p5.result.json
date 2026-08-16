@@ -1,0 +1,20 @@
+{
+  "thread_depth_mm": 1.2,
+  "thread_pitch_mm": 1.6,
+  "material": "CoCr",
+  "offset_mm": 0.5,
+  "stl": "D:\\CT_competition\\cbct_simulation\\explore\\tasks\\sim_d1p20_p1p60_CoCr_ofp0p5\\stl_d1.20_p1.60.stl",
+  "mask": "D:\\CT_competition\\cbct_simulation\\explore\\tasks\\sim_d1p20_p1p60_CoCr_ofp0p5\\metal_mask.nii.gz",
+  "shell_0_2mm": 0.8807443725627829,
+  "sv_ratio": 1.843,
+  "surface_area_mm2": 227.62,
+  "volume_mm3": 123.48,
+  "mu_max": 12.87,
+  "metal_voxels": 15435,
+  "metal_ray_ratio": null,
+  "path_len_max": null,
+  "path_len_mean": null,
+  "path_len_std": null,
+  "angle_max_TV": null,
+  "n_angles": null
+}
